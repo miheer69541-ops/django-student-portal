@@ -113,7 +113,14 @@ Student
 <p class="small text-muted">
 {{ student.address }}
 </p>
-
+<a href="/update/{{ student.id }}/" class="btn btn-warning btn-sm">
+Update
+</a>
+<a href="/delete/{{ student.id }}/"
+class="btn btn-danger btn-sm"
+onclick="return confirm('Are you sure you want to delete this student?')">
+Delete
+</a>
 </div>
 
 </div>
